@@ -1,0 +1,25 @@
+/* Re-set browser defaults & make all box sizes include padding and border */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Centering page */
+#page-wrapper {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* Side by side container for navbar and main */
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Mobile view, overrides several related CSS */
+@media screen and (max-width: 900px) {
+  #container {
+    flex-direction: column;
+  }
+}

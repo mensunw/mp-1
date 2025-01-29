@@ -18,7 +18,7 @@
 }
 
 /* Mobile view, overrides several related CSS */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
   #container {
     flex-direction: column;
   }

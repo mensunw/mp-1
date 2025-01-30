@@ -15,6 +15,172 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  /* These are set by default, but I wanted to write it out for clarity */
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+  align-items: stretch;
+}
+
+/* Img */
+img#pfp {
+  width: 15vw;
+  border-radius: 50%;
+  display: inline;
+  margin: 2%;
+}
+
+/* navbar */
+/* Spruce wood here later */
+nav {
+  display: flex;
+  min-width: 30%;
+  max-width: 30%;
+  /* max-height: 100vh; */
+  /* min-height: 100vh; */
+  flex-direction: column;
+  align-items: center;
+  background-color: burlywood;
+
+  /* These are set by default, but I wanted to write it out for clarity */
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+}
+
+/* List of navbar elements */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  gap: 2vh;
+
+  /* These are set by default, but I wanted to write it out for clarity */
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+}
+
+/* Each individual navbar element */
+nav ul li {
+  display: flex;
+  background: rgba(16, 12, 12, 0.037);
+  height: 30px;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba(134, 161, 166, 0.6);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Es needed for glass boxes */
+  position: relative;
+
+  /* These are set by default, but I wanted to write it out for clarity */
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+}
+
+/* Each individual navbar element hover effects */
+nav ul li:hover {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-color: rgba(134, 161, 166, 1);
+}
+
+header {
+  display: flex;
+  min-width: 100%;
+  align-items: center;
+  /* These are set by default, but I wanted to write it out for clarity */
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+
+}
+
+/* For each glass pane in nav (and link) */
+.glass {
+  background: white;
+  text-decoration: none;
+}
+
+/* The boxes inside the glass pane */
+/* Positioning them relative to the list item */
+.glass-box1 {
+  position: absolute;
+  background-color: rgba(134, 161, 166, 0.6);
+  height: 4px;
+  width: 4px;
+  top: 20%;
+  left: 9.5%;
+  border: 1px solid rgba(134, 161, 166, 0.6);
+}
+
+.glass-box2 {
+  position: absolute;
+  background-color: rgba(134, 161, 166, 0.6);
+  height: 4px;
+  width: 4px;
+  top: 35%;
+  left: 6%;
+  border: 1px solid rgba(134, 161, 166, 0.6);
+}
+
+.glass-box3 {
+  position: absolute;
+  background-color: rgba(134, 161, 166, 0.6);
+  height: 4px;
+  width: 4px;
+  top: 51%;
+  left: 2.5%;
+  border: 1px solid rgba(134, 161, 166, 0.6);
+}
+
+.glass-box4 {
+  position: absolute;
+  background-color: rgba(134, 161, 166, 0.6);
+  height: 4px;
+  width: 4px;
+  top: 51%;
+  left: 90%;
+  border: 1px solid rgba(134, 161, 166, 0.6);
+}
+
+.glass-box5 {
+  position: absolute;
+  background-color: rgba(134, 161, 166, 0.6);
+  height: 4px;
+  width: 4px;
+  top: 69%;
+  left: 86.5%;
+  border: 1px solid rgba(134, 161, 166, 0.6);
+}
+
+
+main {
+  height: 100vh;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: green;
+
+  /* These are set by default, but I wanted to write it out for clarity */
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  flex-basis: auto;
 }
 
 /* Mobile view, overrides several related CSS */

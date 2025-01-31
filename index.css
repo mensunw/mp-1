@@ -4,6 +4,30 @@
   box-sizing: border-box;
 }
 
+/* Fonts for headers */
+h1,
+h2 {
+  font-family: 'Saira Extra Condensed', Serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+h1 {
+  font-size: calc(0px + 5vw);
+}
+
+h2 {
+  font-size: calc(30px + 2vw);
+}
+
+/* Sets everything within the body to this font */
+body {
+  font-family: 'Open Sans', Serif;
+  color: #868e96;
+  font-size: calc(10px + 0.5vw);
+}
+
 /* Centering page */
 #page-wrapper {
   width: 80vw;
@@ -29,6 +53,18 @@ img#pfp {
   border-radius: 50%;
   display: inline;
   margin: 2%;
+}
+
+/* Header information */
+#header-box {
+  display: flex;
+
+  /* These are set by default, but I wanted to write it out for clarity */
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  flex-basis: auto;
 }
 
 /* navbar */
@@ -71,14 +107,20 @@ nav ul {
 nav ul li {
   display: flex;
   background: rgba(16, 12, 12, 0.037);
-  height: 30px;
-  width: 120px;
+  width: calc(40px + 5vw);
   align-items: center;
   justify-content: center;
   border: 3px solid rgba(134, 161, 166, 0.6);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   /* Es needed for glass boxes */
   position: relative;
+
+  /* Font */
+  font-family: 'Saira Extra Condensed', Serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+  font-size: calc(10px + 0.5vw);
 
   /* These are set by default, but I wanted to write it out for clarity */
   flex-direction: row;
@@ -174,9 +216,8 @@ main {
   background-color: antiquewhite;
   padding-left: 3%;
   padding-right: 3%;
-  padding-top: 20%;
-  padding-bottom: 20%;
-  gap: 10%;
+  padding-top: 13%;
+  gap: 6%;
 
   /* These are set by default, but I wanted to write it out for clarity */
   flex-grow: 0;

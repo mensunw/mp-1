@@ -241,13 +241,13 @@ main {
   flex-basis: auto;
 }
 
-/* For each project list */
-.project-block {
+/* For each experience list */
+.experience-block {
   justify-content: space-between;
   display: flex;
 }
 
-.project-block p {
+.experience-block p {
   padding-left: calc(1px + 2vw);
 }
 

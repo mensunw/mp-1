@@ -59,9 +59,8 @@ img#pfp {
 }
 
 /* Header information */
-#header-box {
+header {
   display: flex;
-  align-items: baseline;
   background-image: url("./../images/stone-brick.png");
   box-shadow: 1px 1px;
 
@@ -298,5 +297,12 @@ footer a {
 
   main {
     height: 70vh;
+  }
+
+  /* Align center */
+  header {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
   }
 }

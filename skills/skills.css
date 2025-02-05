@@ -263,7 +263,7 @@ footer {
   display: flex;
   justify-content: center;
   background-image: url("./../images/grass-block.png");
-  height: 20vw;
+  height: 15vw;
   color: white;
   align-items: center;
 
@@ -305,5 +305,9 @@ footer a {
     display: block;
     text-align: center;
     padding-bottom: 5px;
+  }
+
+  footer {
+    height: calc(50px + 15vw);
   }
 }
